@@ -4,14 +4,14 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  const Login = () => {
-    const { isAuthenticated, login, logout } = useAuth();
-    if (isAuthenticated()) {
-        return <button onClick={logout}>Logout</button>;
-    } else {
-        return <button onClick={login}>Login</button>;
-    }
-};
+//   const Login = () => {
+//     const { isAuthenticated, login, logout } = useAuth();
+//     if (isAuthenticated()) {
+//         return <button onClick={logout}>Logout</button>;
+//     } else {
+//         return <button onClick={login}>Login</button>;
+//     }
+// };
 
   return (
     <div className={styles.container}>
@@ -31,7 +31,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <Login />
+        {/* <Login /> */}
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>

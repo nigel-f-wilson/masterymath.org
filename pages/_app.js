@@ -1,6 +1,6 @@
 
-import { AuthConfig } from "react-use-auth";
-import { Auth0 } from "react-use-auth/auth0";
+// import { AuthConfig } from "react-use-auth";
+// import { Auth0 } from "react-use-auth/auth0";
 import { useRouter } from "next/router";
 
 import '../styles/globals.css'
@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
     return (
         <>
-            <AuthConfig
+            {/* <AuthConfig
                 authProvider={Auth0}
                 navigate={(url) => router.push(url)}
                 params={{
@@ -21,7 +21,7 @@ export default function MyApp({ Component, pageProps }) {
                     // responseType: "token id_token",
                     // scope: "openid profile email"
                 }}
-            />
+            /> */}
             <Component {...pageProps} />
         </>
     );
