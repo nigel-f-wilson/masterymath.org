@@ -3,6 +3,16 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+//   const Login = () => {
+//     const { isAuthenticated, login, logout } = useAuth();
+//     if (isAuthenticated()) {
+//         return <button onClick={logout}>Logout</button>;
+//     } else {
+//         return <button onClick={login}>Login</button>;
+//     }
+// };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -20,6 +30,8 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
+
+        {/* <Login /> */}
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
