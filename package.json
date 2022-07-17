@@ -9,11 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "@auth0/auth0-react": "1.10.2",
     "next": "12.2.2",
-    "auth0-js": "9.19.0",
-    "react-use-auth": "1.0.0"
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "eslint": "8.20.0",
