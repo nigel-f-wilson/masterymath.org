@@ -1,6 +1,7 @@
 
-// import { AuthConfig } from "react-use-auth";
-// import { Auth0 } from "react-use-auth/auth0";
+import { Auth0Provider } from "@auth0/auth0-react";
+
+
 import { useRouter } from "next/router";
 
 import '../styles/globals.css'
@@ -9,20 +10,15 @@ import '../styles/globals.css'
 export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
     return (
-        <>
-            {/* <AuthConfig
-                authProvider={Auth0}
-                navigate={(url) => router.push(url)}
-                params={{
-                    domain: "useauth.auth0.com",
-                    clientID: "GjWNFNOHqlino7lQNjBwEywalaYtbIzh",
-                    // redirectUri: `${callbackDomain}/auth0_callback`, // default values follow
-                    // audience: `https://${callbackDomain}/api/v2/`,
-                    // responseType: "token id_token",
-                    // scope: "openid profile email"
-                }}
-            /> */}
+        <Auth0Provider
+          domain="dev-spo5eo4o.us.auth0.com"
+          clientId="YeZjOPZTYZEmOj61o8xgDKZoJhAg7dOa"
+          // redirectUri={window.location.origin}
+          // redirectUri="https://masterymath.org/"
+          redirectUri="http://localhost:3000/"
+          // redirectUri="https://masterymath.org/dashboard"
+        >
             <Component {...pageProps} />
-        </>
+        </Auth0Provider>
     );
 }

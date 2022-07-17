@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import LoginButton from '../components/LoginButton'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        {/* <Login /> */}
+        <LoginButton />
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
